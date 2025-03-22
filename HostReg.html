@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Host Family</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            text-align: center;
+            color: #333;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 1400px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1.5s ease-in-out;
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .check-icon {
+            width: 30px;
+            height: 30px;
+            background: #2196F3;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: #45a049;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        @media (max-width: 600px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interested in Becoming a Host Family?</h1>
+        <p>Do you have a home with a spare bedroom? Open your doors to international students and become part of a meaningful cultural exchange with Local Lens Adventures.</p>
+        <p><strong>Here’s what you’ll gain as a host:</strong></p>
+        <div class="cards">
+            <div class="card"><span class="check-icon">✔</span>Receive a payment for welcoming and caring for a student in your home.</div>
+            <div class="card"><span class="check-icon">✔</span>Share your culture and daily life, helping young people feel supported and settled in Australia.</div>
+            <div class="card"><span class="check-icon">✔</span>Create lasting connections and friendships with students from around the world.</div>
+            <div class="card"><span class="check-icon">✔</span>Flexible hosting schedule – set your availability using our easy-to-use online calendar.</div>
+            <div class="card"><span class="check-icon">✔</span>Enrich your family life through cultural exchange, language sharing, and new perspectives.</div>
+            <div class="card"><span class="check-icon">✔</span>Join a supportive host community with access to resources, events, and ongoing guidance.</div>
+            <div class="card"><span class="check-icon">✔</span>Be part of a purposeful program that prioritises emotional wellbeing, safety, and connection.</div>
+        </div>
+        <p>Interested in learning more or joining the program?</p>
+        <p><strong>Register your interest today and we’ll be in touch with the next steps.</strong> No commitment required – just let us know you're curious!</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSckdFzeWcFVAp0681a6iSCj8t4tZLpdyrZ3Mv4EtNF5bcXa1w/viewform?usp=dialog" class="btn" target="_blank">Register Now</a>
+        <p class="footer">© 2025 Local Lens Adventures | Bringing Cultures Together</p>
+    </div>
+</body>
+</html>
