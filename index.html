@@ -20,16 +20,23 @@
         }
         .container {
             max-width: 1400px;
-            margin: 50px auto;
+            margin: 20px auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             animation: slideUp 1.5s ease-in-out;
+            position: relative;
         }
         @keyframes slideUp {
             from { transform: translateY(50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
+        }
+        .header-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
         }
         h1 {
             color: #4CAF50;
@@ -75,7 +82,7 @@
             display: inline-block;
             background: #4CAF50;
             color: white;
-            padding: 12px 20px;
+            padding: 12px 50px;
             border-radius: 5px;
             text-decoration: none;
             font-size: 18px;
@@ -90,6 +97,11 @@
             font-size: 14px;
             color: #555;
         }
+        .top-right-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
         @media (max-width: 600px) {
             .cards {
                 grid-template-columns: 1fr;
@@ -98,7 +110,9 @@
     </style>
 </head>
 <body>
+    <img src="https://ohiqtiyvbsdrioqrbuqi.supabase.co/storage/v1/object/public/publicimages/homepage-image.jpeg" alt="Host Family" class="header-image">
     <div class="container">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSckdFzeWcFVAp0681a6iSCj8t4tZLpdyrZ3Mv4EtNF5bcXa1w/viewform?usp=dialog" class="btn top-right-button" target="_blank">Register Now</a>
         <h1>Interested in Becoming a Host Family?</h1>
         <p>Do you have a home with a spare bedroom? Open your doors to international students and become part of a meaningful cultural exchange with Local Lens Adventures.</p>
         <p><strong>Here’s what you’ll gain as a host:</strong></p>
@@ -108,7 +122,6 @@
             <div class="card"><span class="check-icon">✔</span>Create lasting connections and friendships with students from around the world.</div>
             <div class="card"><span class="check-icon">✔</span>Flexible hosting schedule – set your availability using our easy-to-use online calendar.</div>
             <div class="card"><span class="check-icon">✔</span>Enrich your family life through cultural exchange, language sharing, and new perspectives.</div>
-            <div class="card"><span class="check-icon">✔</span>Join a supportive host community with access to resources, events, and ongoing guidance.</div>
             <div class="card"><span class="check-icon">✔</span>Be part of a purposeful program that prioritises emotional wellbeing, safety, and connection.</div>
         </div>
         <p>Interested in learning more or joining the program?</p>
