@@ -81,7 +81,7 @@
         }
         .btn {
             display: inline-block;
-            background: #4CAF50;
+            background: orangered;
             color: white;
             padding: 12px 50px;
             border-radius: 5px;
@@ -120,13 +120,24 @@
                 font-size: 16px;
             }
             .top-right-button {
-                position: relative;
-                top: 0;
-                right: 0;
-                display: block;
-                margin: 10px auto;
-                text-align: center;
-            }
+    position: relative;
+    padding: 10px 50px;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+/* Fix for tablets & small laptops */
+@media (max-width: 1024px) {
+    .top-right-button {
+        position: relative;
+        top: 0;
+        right: 0;
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
         }
     </style>
 </head>
